@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Palacios | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" href="build/img/profile-pic.png">
+</head>
+<body>
+    <main>
+        <div class="principal">
+            <a href="#" class="burger burger__noactivo"><i class="fa-solid fa-bars burgerI"></i></a>
+            <nav class="navegacion navegacion__noactivo">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace"  href="curriculum.html">Curriculum</a>
+                <a class="navegacion__enlace" href="portafolio.html">Portafolio</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="contacto.html">Contacto</a>
+            </nav>
+
+
+            <div class="principal__grid">
+
+                <div class="perfil">
+                    <div class="perfil__imagen">
+                        <img src="build/img/profile-pic.png" alt="imagen de perfil">
+                    </div>
+
+
+                    <h2 class="perfil__nombre">Iván <span>Palacios</span></h2>
+                    <p class="perfil__titulo">Desarrollador Web</p>
+                    <div class="perfil__iconos">
+                        <a href="https://github.com/ivanxpalacios" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ivanpalaciosdev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/ivanPalaciosDev" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                    <div class="perfil__informacion">
+                        <p class="perfil__parrafo"><i class="fa-solid fa-calendar"></i>Puebla, México</p>
+                        <p class="perfil__parrafo"><i class="fa-regular fa-envelope"></i><a href="mailto:ivanpalaciosdev@gmail.com">ivanpalaciosdev@gmail.com</a></p>
+                        <p class="perfil__parrafo"><i class="fa-solid fa-phone"></i><a href="tel:+522214253599">(+52) 221 425 3599</a></p>
+                    </div>
+
+                    <form method="get" action="CV-Ivan.docx">
+                        <button class="perfil__boton"><i class="fa-solid fa-download" type="submit"></i>Descargar CV</button>
+                    </form>
+                
+                </div>
+
+                <div class="main">
+                    <form name="formulario" action="/contacto" method="POST" class="formulario" id="formulario">
+                        <h2 class="formulario__heading">Formulario de contacto</h2>
+                        <div class="formulario__grid">
+                            <div class="formulario__campo">
+                                <i class="fa-solid fa-user"></i>
+                                <input name="contacto[name] " id="nombre" type="text" placeholder="Tu Nombre" class="formulario__input" require></input>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input name="contacto[email]" id="correo" type="email" placeholder="Tu Email" class="formulario__input" require></input>
+                            </div>
+    
+                            <div class="formulario__campo">
+                                <textarea name="contacto[mensaje]" id="mensaje" type="text" placeholder="Escriba su mensaje..." class="formulario__textarea" require></textarea>
+                            </div>
+                        </div>
+                            
+                        <button type="submit" name="submit" class="formulario__boton formulario__boton--opacity" disabled>Enviar</button>
+
+                    </form>
+
+                    <div id="spinner" class="spinner__contenedor hidden">
+                        <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <p>© 2023 Iván Palacios Dev - Todos los Derechos Reservados.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+    
+    <script src="build/js/modernizr.js"></script>
+    <script src="build/js/app.js"></script>
+    <script src="build/js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/959a39a3aa.js" crossorigin="anonymous"></script>
+</body>
+</html>
