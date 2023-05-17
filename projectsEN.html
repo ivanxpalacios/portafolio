@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Palacios | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" href="build/img/profile-pic.png">
+</head>
+<body>
+    <main>
+        <div class="principal">
+            <a href="#" class="burger burger__noactivo"><i class="fa-solid fa-bars burgerI"></i></a>
+            <nav class="navegacion navegacion__noactivo">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace"  href="curriculum.html">Curriculum</a>
+                <a class="navegacion__enlace navegacion__enlace--activo" href="portafolio.html">Portafolio</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+            </nav>
+
+
+            <div class="principal__grid">
+
+                <div class="perfil">
+                    <div class="perfil__imagen">
+                        <img src="build/img/profile-pic.png" alt="imagen de perfil">
+                    </div>
+
+
+                    <h2 class="perfil__nombre">Iván <span>Palacios</span></h2>
+                    <p class="perfil__titulo">Desarrollador Web</p>
+                    <div class="perfil__iconos">
+                        <a href="https://github.com/ivanxpalacios" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ivanpalaciosdev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/ivanPalaciosDev" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                    <div class="perfil__informacion">
+                        <p class="perfil__parrafo"><i class="fa-solid fa-calendar"></i>Puebla, México</p>
+                        <p class="perfil__parrafo"><i class="fa-regular fa-envelope"></i><a href="mailto:ivanpalaciosdev@gmail.com">ivanpalaciosdev@gmail.com</a></p>
+                        <p class="perfil__parrafo"><i class="fa-solid fa-phone"></i><a href="tel:+522214253599">(+52) 221 425 3599</a></p>
+                    </div>
+
+                    <form method="get" action="CV-Ivan.docxx">
+                        <button class="perfil__boton"><i class="fa-solid fa-download" type="submit"></i>Descargar CV</button>
+                    </form>
+                
+                </div>
+
+                <div class="main portafolio">
+                    <h2 class="portafolio__heading">Proyectos</h2>
+
+                    <div class="proyecto">
+                        <a class="proyecto__enlace" href="https://github.com/ivanxpalacios/moodtracker" target="_blank">
+                            <div class="bg-image bg-image__3"></div>
+                        </a>
+                        <div class="proyecto__informacion">
+                            <h3 class="proyecto__heading">Mood Tracker</h3>
+                            <p class="proyecto__parrafo">Proyecto creado con HTML, CSS, SASS, Bootstrap y JavaScript con funcionalidad CRUD. Utiliza JSON.server para almacenar las entradas en un archivo JSON.</p>
+                            <p class="proyecto__creado"><i class="fa-brands fa-html5" style="color: #f36518;"></i><i class="fa-brands fa-css3-alt" style="color: #29a9df;"></i><i class="fa-brands fa-sass" style="color: #d0649b;"></i><i class="fa-brands fa-bootstrap" style="color: #7510f6;"></i><i class="fa-brands fa-square-js" style="color: #ffdf00;"></i></p>
+                            <a class="proyecto__enlace" target="_blank" href="https://github.com/ivanxpalacios/moodtracker"><i class="fa-brands fa-github proyecto__enlace-icon fa-xl"></i>Visita el repositorio aquí.</a>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <a class="proyecto__enlace" href="https://marianamartinezbeautycenter.netlify.app/" target="_blank">
+                            <div class="bg-image bg-image__1"></div>
+                        </a>
+                        <div class="proyecto__informacion">
+                            <h3 class="proyecto__heading">Mariana Martínez Beauty Center</h3>
+                            <p class="proyecto__parrafo">Sitio web con temática de belleza para una emprendedora con página de Inicio, Servicios, Testimoniales, una Galería y un Formulario para agendar una cita. Está hecho con SASS y JavaScript.</p>
+                            <p class="proyecto__creado"><i class="fa-brands fa-html5" style="color: #f36518;"></i><i class="fa-brands fa-css3-alt" style="color: #29a9df;"></i><i class="fa-brands fa-sass" style="color: #d0649b;"></i><i class="fa-brands fa-square-js" style="color: #ffdf00;"></i></p>
+                            <a class="proyecto__enlace" target="_blank" href="https://github.com/ivanxpalacios/MMBeautyCenter"><i class="fa-brands fa-github proyecto__enlace-icon fa-xl"></i>Visita el repositorio aquí.</a>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <a class="proyecto__enlace" href="https://triviagamebyivan.netlify.app/" target="_blank">
+                            <div class="bg-image bg-image__2"></div>
+                        </a>
+                        <div class="proyecto__informacion">
+                            <h3 class="proyecto__heading">Trivia</h3>
+                            <p class="proyecto__parrafo">En esta trivia, el jugador ingresa su nombre y los parámetros de su elección para generar un cuestionario desde un banco de preguntas en línea al que accedemos con fetch. Al final imprimimos unas felicitaciones y el total de preguntas correctas acertadas. Hecho con SASS y JavaScript.</p>
+                            <p class="proyecto__creado"><i class="fa-brands fa-html5" style="color: #f36518;"></i><i class="fa-brands fa-css3-alt" style="color: #29a9df;"></i><i class="fa-brands fa-sass" style="color: #d0649b;"></i><i class="fa-brands fa-square-js" style="color: #ffdf00;"></i></p>
+                            <a class="proyecto__enlace" target="_blank" href="https://github.com/ivanxpalacios/trivia"><i class="fa-brands fa-github proyecto__enlace-icon fa-xl"></i>Visita el repositorio aquí.</a>
+                        </div>
+                    </div>
+
+
+                    <div class="copyright">
+                        <p>© 2023 Iván Palacios Dev - Todos los Derechos Reservados.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </main>
+    
+
+    <script src="build/js/modernizr.js"></script>
+    <script src="build/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/959a39a3aa.js" crossorigin="anonymous"></script>
+</body>
+</html>
